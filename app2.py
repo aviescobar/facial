@@ -20,3 +20,4 @@ def process_image(image_data):
 
    # Asegurarse de que la imagen tiene 3 canales (RGB) antes de redimensionar
     if len(image.shape) == 2:
+       image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
