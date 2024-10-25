@@ -59,4 +59,5 @@ def process_image(image_data):
    plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
    buf.seek(0)
    img_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
+   return img_base64
 
