@@ -14,3 +14,5 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 
 # Función para detectar el rostro y dispersar los puntos clave
 def process_image(image_data):
+   # Leer la imagen desde los datos recibidos usando PIL y convertir a array numpy
+    image = Image.open(io.BytesIO(image_data))
