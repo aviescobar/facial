@@ -13,3 +13,4 @@ app = Flask(__name__)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Función para detectar el rostro y dispersar los puntos clave
+def process_image(image_data):
