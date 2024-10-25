@@ -53,4 +53,5 @@ def process_image(image_data):
       plt.plot(x_kp, y_kp, 'rx', markersize=8)  # Marcadores más grandes para asegurar que sean visibles
 
    plt.axis('off')  # No mostrar ejes
+   # Convertir el gráfico de matplotlib en imagen y luego a base64
 
