@@ -76,3 +76,6 @@ def procesar_imagen():
    if file.filename == '':
       return jsonify({'error': 'No selected file'}), 400
 
+   # Leer la imagen en binario
+    image_data = file.read()
+
