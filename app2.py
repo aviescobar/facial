@@ -55,13 +55,14 @@ def process_image(image_data):
    plt.axis('off')  # No mostrar ejes
    # Convertir el gráfico de matplotlib en imagen y luego a base64
 
-   buf = io.BytesIO()
-   plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
-   buf.seek(0)
-   img_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
+      buf = io.BytesIO()
+      plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
+      buf.seek(0)
+      img_base64 = base64.b64encode(buf.getvalue()).decode('utf-8')
    return img_base64
 
    # Ruta para la página HTML
    @app.route('/')
    def index():
+      return render_template('index.html')
 
