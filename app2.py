@@ -74,4 +74,5 @@ def procesar_imagen():
    file = request.files['file']
 
    if file.filename == '':
+      return jsonify({'error': 'No selected file'}), 400
 
