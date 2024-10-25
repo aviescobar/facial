@@ -69,4 +69,5 @@ def process_image(image_data):
 # Ruta para procesar la imagen
 @app.route('/procesar_imagen', methods=['POST'])
 def procesar_imagen():
+   if 'file' not in request.files:
 
