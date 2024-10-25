@@ -50,4 +50,5 @@ def process_image(image_data):
 
    for kp in keypoints:
       x_kp, y_kp = kp.pt
+      plt.plot(x_kp, y_kp, 'rx', markersize=8)  # Marcadores más grandes para asegurar que sean visibles
 
