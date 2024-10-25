@@ -21,3 +21,6 @@ def process_image(image_data):
    # Asegurarse de que la imagen tiene 3 canales (RGB) antes de redimensionar
     if len(image.shape) == 2:
        image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
+
+   # Redimensionar la imagen a (96, 96) con interpolación bicúbica para mejorar calidad
+    resized_image = cv2.resize(image, (96, 96), interpolation=cv2.INTER_CUBIC)
