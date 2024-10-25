@@ -62,4 +62,5 @@ def process_image(image_data):
    return img_base64
 
    # Ruta para la página HTML
+   @app.route('/')
 
