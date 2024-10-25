@@ -34,4 +34,7 @@ def process_image(image_data):
     if len(faces) == 0:
         return jsonify({'error': 'No face detected'}), 400
 
+   # Tomar la primera cara detectada (si hay varias)
+    (x, y, w, h) = faces[0]
+
 
