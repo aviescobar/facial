@@ -46,4 +46,5 @@ def process_image(image_data):
 
    # Dibujar "X" rojas en las posiciones de los puntos clave en la región del rostro
    plt.figure(figsize=(3, 3), dpi=96)
+   plt.imshow(face_region, cmap='gray')
 
