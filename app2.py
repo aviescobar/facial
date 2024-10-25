@@ -5,3 +5,6 @@ import matplotlib.pyplot as plt
 import io
 import base64
 from PIL import Image
+
+
+app = Flask(__name__)
