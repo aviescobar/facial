@@ -56,4 +56,5 @@ def process_image(image_data):
    # Convertir el gráfico de matplotlib en imagen y luego a base64
 
    buf = io.BytesIO()
+   plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0)
 
