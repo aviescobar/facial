@@ -28,3 +28,6 @@ def process_image(image_data):
    # Convertir la imagen redimensionada a escala de grises
     gray_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2GRAY)
 
+   # Detectar el rostro en la imagen
+    faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+
