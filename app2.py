@@ -8,3 +8,5 @@ from PIL import Image
 
 
 app = Flask(__name__)
+
+# Cargar el modelo Haarcascades para la detección de rostros
