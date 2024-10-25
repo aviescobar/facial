@@ -39,4 +39,5 @@ def process_image(image_data):
     face_region = gray_image[y:y+h, x:x+w]
 
     # Inicializar el detector ORB con límite de 15 puntos clave
+    orb = cv2.ORB_create(nfeatures=15)
 
