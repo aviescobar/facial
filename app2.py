@@ -44,3 +44,5 @@ def process_image(image_data):
    # Detectar puntos clave y descriptores en toda la región del rostro
     keypoints, descriptors = orb.detectAndCompute(face_region, None)
 
+   # Dibujar "X" rojas en las posiciones de los puntos clave en la región del rostro
+
