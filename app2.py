@@ -24,3 +24,7 @@ def process_image(image_data):
 
    # Redimensionar la imagen a (96, 96) con interpolación bicúbica para mejorar calidad
     resized_image = cv2.resize(image, (96, 96), interpolation=cv2.INTER_CUBIC)
+
+   # Convertir la imagen redimensionada a escala de grises
+    gray_image = cv2.cvtColor(resized_image, cv2.COLOR_BGR2GRAY)
+
