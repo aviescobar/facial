@@ -82,3 +82,6 @@ def procesar_imagen():
     # Procesar la imagen y obtener el resultado
     processed_image_base64 = process_image(image_data)
 
+    # Devolver la imagen procesada en base64 para mostrarla en el frontend
+    return jsonify({'image': processed_image_base64})
+
