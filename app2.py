@@ -31,3 +31,7 @@ def process_image(image_data):
    # Detectar el rostro en la imagen
     faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
+    if len(faces) == 0:
+        return jsonify({'error': 'No face detected'}), 400
+
+
