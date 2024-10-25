@@ -36,5 +36,5 @@ def process_image(image_data):
 
    # Tomar la primera cara detectada (si hay varias)
     (x, y, w, h) = faces[0]
-
+    face_region = gray_image[y:y+h, x:x+w]
 
