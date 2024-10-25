@@ -48,3 +48,5 @@ def process_image(image_data):
    plt.figure(figsize=(3, 3), dpi=96)
    plt.imshow(face_region, cmap='gray')
 
+   for kp in keypoints:
+
