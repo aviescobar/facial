@@ -38,3 +38,5 @@ def process_image(image_data):
     (x, y, w, h) = faces[0]
     face_region = gray_image[y:y+h, x:x+w]
 
+    # Inicializar el detector ORB con límite de 15 puntos clave
+
