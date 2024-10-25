@@ -4,3 +4,4 @@ import cv2
 import matplotlib.pyplot as plt
 import io
 import base64
+from PIL import Image
