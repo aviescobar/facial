@@ -10,3 +10,6 @@ from PIL import Image
 app = Flask(__name__)
 
 # Cargar el modelo Haarcascades para la detección de rostros
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+# Función para detectar el rostro y dispersar los puntos clave
