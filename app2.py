@@ -17,3 +17,6 @@ def process_image(image_data):
    # Leer la imagen desde los datos recibidos usando PIL y convertir a array numpy
     image = Image.open(io.BytesIO(image_data))
    image = np.array(image)
+
+   # Asegurarse de que la imagen tiene 3 canales (RGB) antes de redimensionar
+    if len(image.shape) == 2:
