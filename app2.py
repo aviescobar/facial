@@ -41,3 +41,6 @@ def process_image(image_data):
     # Inicializar el detector ORB con límite de 15 puntos clave
     orb = cv2.ORB_create(nfeatures=15)
 
+   # Detectar puntos clave y descriptores en toda la región del rostro
+    keypoints, descriptors = orb.detectAndCompute(face_region, None)
+
