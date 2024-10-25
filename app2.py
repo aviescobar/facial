@@ -79,3 +79,6 @@ def procesar_imagen():
    # Leer la imagen en binario
     image_data = file.read()
 
+    # Procesar la imagen y obtener el resultado
+    processed_image_base64 = process_image(image_data)
+
